@@ -1,0 +1,46 @@
+:root{
+  --bg:#fff0f6;
+  --card:#ffffff;
+  --accent:#ff6fa3;
+  --muted:#6b6b6b;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #fff0f6 0%, #fff6f8 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:100vh;
+  color:#333;
+}
+.card{
+  width:720px;
+  max-width:94%;
+  background:var(--card);
+  border-radius:18px;
+  box-shadow:0 8px 30px rgba(255,111,146,0.12);
+  padding:28px;
+  overflow:hidden;
+  position:relative;
+}
+.top{display:flex;gap:18px;align-items:center}
+.heart{width:72px;height:72px;background:linear-gradient(135deg,var(--accent), #ff9ccf);border-radius:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(255,111,146,0.18)}
+h1{margin:0;font-size:28px;line-height:1.05;color:#222}
+p.lead{margin:8px 0 0 0;color:var(--muted);font-size:14px}
+.collage{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.collage .big{grid-row:span 2;border-radius:12px;overflow:hidden}
+.collage img{display:block;width:100%;height:100%;object-fit:cover;border-radius:12px;border:4px solid rgba(255,255,255,0.8);box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+.details{margin-top:18px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+.info{font-size:15px;color:#444}
+.cta{display:flex;gap:8px;align-items:center}
+.btn{background:var(--accent);color:white;border:none;padding:10px 16px;border-radius:10px;font-weight:600;cursor:pointer;box-shadow:0 8px 18px rgba(255,111,146,0.18)}
+.alt{background:transparent;color:var(--accent);border:2px solid rgba(255,111,146,0.12);padding:8px 12px;border-radius:10px;font-weight:600;text-decoration:none}
+footer{margin-top:14px;font-size:13px;color:var(--muted);text-align:right}
+.overlay{position:absolute;inset:0;background:rgba(255,255,255,0.95);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:20px;border-radius:18px;opacity:0;pointer-events:none;transition:opacity .28s ease}
+.overlay.show{opacity:1;pointer-events:auto}
+.check{width:86px;height:86px;border-radius:50%;background:linear-gradient(135deg,#ff9ccf,var(--accent));display:flex;align-items:center;justify-content:center;color:white;font-size:36px;box-shadow:0 12px 30px rgba(255,111,146,0.18)}
+.thank{margin-top:14px;font-weight:600;color:#333}
+@media (max-width:520px){.collage{grid-template-columns:1fr 1fr}.collage .big{grid-row:auto}}

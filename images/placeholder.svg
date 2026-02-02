@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <rect width="100%" height="100%" fill="#fff6f8" />
+  <g transform="translate(360,240)">
+    <circle r="100" fill="#ff9ccf" opacity="0.18" />
+    <text x="0" y="6" font-family="Poppins, Arial, sans-serif" font-size="28" fill="#ff6fa3" text-anchor="middle">Your photo here</text>
+  </g>
+</svg>
