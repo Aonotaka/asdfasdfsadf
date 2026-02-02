@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>내 밸런타인이 되어줄래?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="card" id="card">
+    <div class="top">
+      <div class="heart" aria-hidden="true">
+        <svg width="34" height="30" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-7-4.6-9-8.2C-0.2 6.6 5.3 2 9 5.2 10.6 6.8 12 9 12 9s1.4-2.2 3-3.8C18.7 2 24.2 6.6 21 12.8 19 16.4 12 21 12 21z"/></svg>
+      </div>
+      <div>
+        <h1>내 밸런타인이 되어줄래?</h1>
+        <p class="lead" id="lead">Taka has sent an invitation. Please review the below details and RSVP.</p>
+      </div>
+    </div>
+
+    <div class="collage">
+      <div class="big"><img src="images/photo1.jpg" alt="Our photo 1 — replace with your image" onerror="this.onerror=null;this.src='images/placeholder.svg';"></div>
+      <div><img src="images/photo2.jpg" alt="Our photo 2 — replace with your image" onerror="this.onerror=null;this.src='images/placeholder.svg';"></div>
+      <div><img src="images/photo3.jpg" alt="Our photo 3 — replace with your image" onerror="this.onerror=null;this.src='images/placeholder.svg';"></div>
+    </div>
+
+    <div class="details">
+      <div class="info">
+        <div><strong>Date:</strong> Feb 12</div>
+        <div style="margin-top:6px;"><strong>Time:</strong> 7:00 PM</div>
+        <div style="margin-top:6px;"><strong>Place:</strong> Haidilao</div>
+        <div>we do not care if our breaths smell like garlic, do we...?</div>
+        <div>since we will be in Moncton on the actual valentine's day...</div>
+        <div>honestly, doesn't matter when we celebrate as long as we're together.</div>
+        <div>please do suggest another date if Feb 12 doesn't work</div>
+      </div>
+      <div class="cta">
+        <button class="btn" id="yesBtn" aria-label="Say yes">Say Yes</button>
+        <a class="alt" href="#" id="No">No</a>
+      </div>
+    </div>
+
+    <footer>To すーちゃん From 카타</footer>
+
+    <div class="overlay" id="overlay" role="status" aria-live="polite">
+      <div class="check">♥</div>
+      <div class="thank" id="thankText">Thanks — can't wait!</div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
